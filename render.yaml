@@ -7,9 +7,9 @@ services:
     startCommand: node server.js
     envVars:
       - key: MONGO_CONNECTION
-        key: mongodb+srv://WendieDB:fuqre0-bivdix-jabcUt@cluster0.pr9ysdv.mongodb.net/ nightscout?retryWrites=true&w=majority&appName=Cluster0
+        value: mongodb+srv://WendieDB:fuqre0-bivdix-jabcUt@cluster0.pr9ysdv.mongodb.net/ nightscout?retryWrites=true&w=majority&appName=Cluster0
       - key: API_SECRET
-        key: W3ndi3Rav3n!
+        value: W3ndi3Rav3n!
       - key: DISPLAY_UNITS
         value: mmol
       - key: ENABLE
