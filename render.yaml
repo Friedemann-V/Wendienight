@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nightscout
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGO_CONNECTION
+        sync: false
+      - key: API_SECRET
+        sync: false
+      - key: DISPLAY_UNITS
+        value: mmol
+      - key: ENABLE
+        value: careportal basal iob cob
+      - key: TZ
+        value: Europe/Amsterdam
