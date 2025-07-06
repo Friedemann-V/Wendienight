@@ -7,9 +7,9 @@ services:
     startCommand: node server.js
     envVars:
       - key: MONGO_CONNECTION
-        sync: false
+        generateValue: true
       - key: API_SECRET
-        sync: false
+        generateValue: true
       - key: DISPLAY_UNITS
         value: mmol
       - key: ENABLE
